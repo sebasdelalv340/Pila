@@ -48,10 +48,10 @@ fun main() {
     println(personasRev)
 
     //Prueba con tipos de datos distintos
-    val datos = listOf("uno", 3, 5.2, persona4)
+    val datos = listOf("uno", 3, 5.2, persona4, true)
     val datosRev: List<Any> = reverse(datos)
 
-    if (!listOf(persona4, 5.2, 3, "uno").equals(datosRev))
+    if (!listOf(true, persona4, 5.2, 3, "uno").equals(datosRev))
         println("Error")
     else
         println("Correcto")
